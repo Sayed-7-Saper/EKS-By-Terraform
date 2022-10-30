@@ -1,0 +1,22 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.27.0"
+    }   
+    helm = {
+      source  = "hashicorp/helm"
+      version = "2.6.0"
+    }
+    time = {
+      source  = "hashicorp/time"
+      version = "0.7.2"
+    }
+    random = {
+      source  = "hashicorp/random"
+      version = "3.1.0"
+    }
+  }
+  required_version = "~> 1.3.0"
+}
+
